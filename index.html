@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VALINA POPA | Официальный сайт</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+
+
+        body {
+
+            font-family: 'Comic Neue', cursive;
+
+            background-color: #fff5f7;
+
+        }
+
+
+
+        .popa-gradient {
+
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+
+        }
+
+
+
+        .gallery-item {
+
+            transition: all 0.3s ease;
+
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        .gallery-item:hover {
+
+            transform: scale(1.05);
+
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        .login-modal, .request-modal {
+
+            animation: fadeIn 0.3s ease-out;
+
+        }
+
+
+
+        @keyframes fadeIn {
+
+            from { opacity: 0; transform: translateY(-20px); }
+
+            to { opacity: 1; transform: translateY(0); }
+
+        }
+
+
+
+        .heart-beat {
+
+            animation: heartbeat 1.5s infinite;
+
+        }
+
+
+
+        @keyframes heartbeat {
+
+            0% { transform: scale(1); }
+
+            25% { transform: scale(1.1); }
+
+            50% { transform: scale(1); }
+
+            75% { transform: scale(1.1); }
+
+            100% { transform: scale(1); }
+
+        }
+
+    </style>
+
+</head>
+
+<body class="min-h-screen">
+
+<!-- Шапка -->
+
+<header class="popa-gradient text-white shadow-lg">
+
+    <div class="container mx-auto px-4 py-6">
+
+        <div class="flex justify-between items-center">
+
+            <div class="flex items-center space-x-2">
+
+                <div class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center">
+
+                    <i class="fas fa-pepper-hot text-2xl text-pink-600"></i>
+
+                </div>
+
+                <h1 class="text-3xl font-bold">VALINA POPA</h1>
+
+            </div>
+
+            <nav class="hidden md:flex space-x-6">
+
+                <a href="#about" class="hover:text-pink-200 transition">О попе</a>
+
+                <a href="#gallery" class="hover:text-pink-200 transition">Галерея</a>
+
+                <a href="#reviews" class="hover:text-pink-200 transition">Отзывы</a>
+
+                <a href="#contact" class="hover:text-pink-200 transition">Контакты</a>
+
+            </nav>
+
+            <button onclick="openLoginModal()" class="bg-white text-pink-500 px-4 py-2 rounded-full font-bold hover:bg-pink-100 transition flex items-center">
+
+                <i class="fas fa-user mr-2"></i> Войти
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- Герой-секция -->
+
+<section class="popa-gradient text-white py-20">
+
+    <div class="container mx-auto px-4 text-center">
+
+        <h2 class="text-5xl md:text-7xl font-bold mb-6">VALINA POPA</h2>
+
+        <p class="text-xl md:text-2xl mb-8">Самая обсуждаемая попа 2023 года!</p>
+
+        <div class="flex justify-center space-x-4">
+
+            <button onclick="openRequestModal()" class="bg-white text-pink-500 px-6 py-3 rounded-full font-bold hover:bg-pink-100 transition text-lg">
+
+                Записаться на просмотр <i class="fas fa-arrow-right ml-2"></i>
+
+            </button>
+
+            <button onclick="document.getElementById('gallery').scrollIntoView()" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-pink-500 transition text-lg">
+
+                Галерея <i class="fas fa-images ml-2"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- О попе -->
+
+<section id="about" class="py-16 bg-white">
+
+    <div class="container mx-auto px-4">
+
+        <h2 class="text-4xl font-bold text-center mb-12 text-pink-600">О ВАЛИНОЙ ПОПЕ</h2>
+
+        <div class="flex flex-col md:flex-row items-center">
+
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+
+                <div class="bg-pink-100 rounded-3xl p-6 shadow-lg">
+
+                    <h3 class="text-2xl font-bold mb-4 text-pink-700">Характеристики:</h3>
+
+                    <ul class="space-y-3">
+
+                        <li class="flex items-center">
+
+                            <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+
+                            <span>Объем: 95 см (идеально!)</span>
+
+                        </li>
+
+                        <li class="flex items-center">
+
+                            <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+
+                            <span>Форма: идеальный персик</span>
+
+                        </li>
+
+                        <li class="flex items-center">
+
+                            <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+
+                            <span>Мягкость: как пуховик</span>
+
+                        </li>
+
+                        <li class="flex items-center">
+
+                            <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+
+                            <span>Упругость: пружинит при хлопке</span>
+
+                        </li>
+
+                        <li class="flex items-center">
+
+                            <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+
+                            <span>Редкость: 1 на 10 000</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="md:w-1/2">
+
+                <h3 class="text-2xl font-bold mb-4 text-pink-700">История создания:</h3>
+
+                <p class="mb-4 text-gray-700">Валина попа - это не просто часть тела, это произведение искусства, созданное самой природой. С детства Валя уделяла особое внимание своей пятой точке, регулярно делая приседания и ухаживая за кожей.</p>
+
+                <p class="mb-4 text-gray-700">В 2023 году попа достигла своего пика совершенства, что было подтверждено независимыми экспертами. Теперь это не просто попа, а бренд, явление, культурный феномен.</p>
+
+                <p class="text-gray-700">Каждый день Валя получает сотни предложений о сотрудничестве от мировых брендов нижнего белья, но пока выбирает только самые достойные.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Галерея -->
+
+<section id="gallery" class="py-16 bg-pink-50">
+
+    <div class="container mx-auto px-4">
+
+        <h2 class="text-4xl font-bold text-center mb-12 text-pink-600">ГАЛЕРЕЯ</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Фото 1 -->
+
+            <div class="gallery-item bg-white rounded-2xl overflow-hidden">
+
+                <div class="h-64 bg-pink-200 flex items-center justify-center">
+
+                    <i class="fas fa-lock text-5xl text-pink-500"></i>
+
+                </div>
+
+                <div class="p-4">
+
+                    <h3 class="text-xl font-bold mb-2 text-pink-700">"Утренний свет"</h3>
+
+                    <p class="text-gray-600 mb-3">Первые лучи солнца на идеальной поверхности</p>
+
+                    <button onclick="openLoginModal()" class="text-pink-500 font-bold flex items-center">
+
+                        Разблокировать <i class="fas fa-arrow-right ml-2"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Фото 2 -->
+
+            <div class="gallery-item bg-white rounded-2xl overflow-hidden">
+
+                <div class="h-64 bg-pink-200 flex items-center justify-center">
+
+                    <i class="fas fa-lock text-5xl text-pink-500"></i>
+
+                </div>
+
+                <div class="p-4">
+
+                    <h3 class="text-xl font-bold mb-2 text-pink-700">"Пляжный закат"</h3>
+
+                    <p class="text-gray-600 mb-3">Игра теней на фоне заходящего солнца</p>
+
+                    <button onclick="openLoginModal()" class="text-pink-500 font-bold flex items-center">
+
+                        Разблокировать <i class="fas fa-arrow-right ml-2"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Фото 3 -->
+
+            <div class="gallery-item bg-white rounded-2xl overflow-hidden">
+
+                <div class="h-64 bg-pink-200 flex items-center justify-center">
+
+                    <i class="fas fa-lock text-5xl text-pink-500"></i>
+
+                </div>
+
+                <div class="p-4">
+
+                    <h3 class="text-xl font-bold mb-2 text-pink-700">"Зимняя сказка"</h3>
+
+                    <p class="text-gray-600 mb-3">Контраст нежности и холодного времени года</p>
+
+                    <button onclick="openLoginModal()" class="text-pink-500 font-bold flex items-center">
+
+                        Разблокировать <i class="fas fa-arrow-right ml-2"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Фото 4 -->
+
+            <div class="gallery-item bg-white rounded-2xl overflow-hidden">
+
+                <div class="h-64 bg-pink-200 flex items-center justify-center">
+
+                    <i class="fas fa-lock text-5xl text-pink-500"></i>
+
+                </div>
+
+                <div class="p-4">
+
+                    <h3 class="text-xl font-bold mb-2 text-pink-700">"Черное и белое"</h3>
+
+                    <p class="text-gray-600 mb-3">Классика в стиле ню</p>
+
+                    <button onclick="openLoginModal()" class="text-pink-500 font-bold flex items-center">
+
+                        Разблокировать <i class="fas fa-arrow-right ml-2"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Фото 5 -->
+
+            <div class="gallery-item bg-white rounded-2xl overflow-hidden">
+
+                <div class="h-64 bg-pink-200 flex items-center justify-center">
+
+                    <i class="fas fa-lock text-5xl text-pink-500"></i>
+
+                </div>
+
+                <div class="p-4">
+
+                    <h3 class="text-xl font-bold mb-2 text-pink-700">"Джинсовый рай"</h3>
+
+                    <p class="text-gray-600 mb-3">Как скульптура в обтягивающих джинсах</p>
+
+                    <button onclick="openLoginModal()" class="text-pink-500 font-bold flex items-center">
+
+                        Разблокировать <i class="fas fa-arrow-right ml-2"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Фото 6 -->
+
+            <div class="gallery-item bg-white rounded-2xl overflow-hidden">
+
+                <div class="h-64 bg-pink-200 flex items-center justify-center">
+
+                    <i class="fas fa-lock text-5xl text-pink-500"></i>
+
+                </div>
+
+                <div class="p-4">
+
+                    <h3 class="text-xl font-bold mb-2 text-pink-700">"VIP доступ"</h3>
+
+                    <p class="text-gray-600 mb-3">Эксклюзив для избранных</p>
+
+                    <button onclick="openRequestModal()" class="bg-pink-500 text-white px-4 py-2 rounded-full font-bold hover:bg-pink-600 transition">
+
+                        Запросить доступ
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Отзывы -->
+
+<section id="reviews" class="py-16 bg-white">
+
+    <div class="container mx-auto px-4">
+
+        <h2 class="text-4xl font-bold text-center mb-12 text-pink-600">ОТЗЫВЫ</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Отзыв 1 -->
+
+            <div class="bg-pink-50 rounded-2xl p-6 shadow-md">
+
+                <div class="flex items-center mb-4">
+
+                    <div class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center">
+
+                        <i class="fas fa-user text-pink-600"></i>
+
+                    </div>
+
+                    <div class="ml-4">
+
+                        <h4 class="font-bold">Сергей</h4>
+
+                        <div class="flex text-yellow-400">
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="text-gray-700">"Я видел много поп в своей жизни, но Валина - это что-то невероятное! После просмотра моя жизнь разделилась на до и после."</p>
+
+            </div>
+
+
+
+            <!-- Отзыв 2 -->
+
+            <div class="bg-pink-50 rounded-2xl p-6 shadow-md">
+
+                <div class="flex items-center mb-4">
+
+                    <div class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center">
+
+                        <i class="fas fa-user text-pink-600"></i>
+
+                    </div>
+
+                    <div class="ml-4">
+
+                        <h4 class="font-bold">Анна</h4>
+
+                        <div class="flex text-yellow-400">
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star-half-alt"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="text-gray-700">"Как женщина я оцениваю не только внешний вид, но и уход. Валя - пример для подражания! Теперь моя цель - попа как у Вали."</p>
+
+            </div>
+
+
+
+            <!-- Отзыв 3 -->
+
+            <div class="bg-pink-50 rounded-2xl p-6 shadow-md">
+
+                <div class="flex items-center mb-4">
+
+                    <div class="w-12 h-12 rounded-full bg-pink-200 flex items-center justify-center">
+
+                        <i class="fas fa-user text-pink-600"></i>
+
+                    </div>
+
+                    <div class="ml-4">
+
+                        <h4 class="font-bold">Михаил (эксперт)</h4>
+
+                        <div class="flex text-yellow-400">
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                            <i class="fas fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="text-gray-700">"20 лет в индустрии нижнего белья, и я могу сказать - это 9.8 из 10! Минус 0.2 за то, что не могу видеть это чудо каждый день."</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Контакты и заявка -->
+
+<section id="contact" class="py-16 bg-pink-50">
+
+    <div class="container mx-auto px-4">
+
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+
+            <div class="md:flex">
+
+                <div class="md:w-1/2 bg-pink-500 text-white p-8">
+
+                    <h2 class="text-3xl font-bold mb-6">ХОЧЕШЬ УВИДЕТЬ ЛИЧНО?</h2>
+
+                    <p class="mb-6">Заполни заявку на приватный просмотр Валиной попы. Только 5 счастливчиков в месяц получают эту возможность!</p>
+
+                    <div class="space-y-4">
+
+                        <div class="flex items-center">
+
+                            <i class="fas fa-check-circle text-xl mr-3"></i>
+
+                            <span>Эксклюзивные ракурсы</span>
+
+                        </div>
+
+                        <div class="flex items-center">
+
+                            <i class="fas fa-check-circle text-xl mr-3"></i>
+
+                            <span>Личное общение с Валей</span>
+
+                        </div>
+
+                        <div class="flex items-center">
+
+                            <i class="fas fa-check-circle text-xl mr-3"></i>
+
+                            <span>Фотосессия (по договоренности)</span>
+
+                        </div>
+
+                        <div class="flex items-center">
+
+                            <i class="fas fa-check-circle text-xl mr-3"></i>
+
+                            <span>Сертификат подлинности</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="md:w-1/2 p-8">
+
+                    <h3 class="text-2xl font-bold mb-6 text-pink-600">Форма заявки</h3>
+
+                    <form id="requestForm" class="space-y-4">
+
+                        <div>
+
+                            <label class="block text-gray-700 mb-2">Ваше имя</label>
+
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block text-gray-700 mb-2">Email</label>
+
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block text-gray-700 mb-2">Телефон</label>
+
+                            <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+                        </div>
+
+                        <div>
+
+                            <label class="block text-gray-700 mb-2">Ваш запрос</label>
+
+                            <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" rows="3"></textarea>
+
+                        </div>
+
+                        <button type="button" onclick="submitRequest()" class="w-full bg-pink-500 text-white py-3 rounded-lg font-bold hover:bg-pink-600 transition flex items-center justify-center">
+
+                            Отправить заявку <i class="fas fa-paper-plane ml-2"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Подвал -->
+
+<footer class="bg-pink-900 text-white py-8">
+
+    <div class="container mx-auto px-4">
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+
+            <div class="mb-4 md:mb-0">
+
+                <div class="flex items-center space-x-2">
+
+                    <div class="w-10 h-10 rounded-full bg-pink-700 flex items-center justify-center">
+
+                        <i class="fas fa-pepper-hot text-lg"></i>
+
+                    </div>
+
+                    <span class="font-bold">VALINA POPA</span>
+
+                </div>
+
+            </div>
+
+            <div class="flex space-x-6 mb-4 md:mb-0">
+
+                <a href="#" class="hover:text-pink-300"><i class="fab fa-instagram text-xl"></i></a>
+
+                <a href="#" class="hover:text-pink-300"><i class="fab fa-tiktok text-xl"></i></a>
+
+                <a href="#" class="hover:text-pink-300"><i class="fab fa-telegram text-xl"></i></a>
+
+                <a href="#" class="hover:text-pink-300"><i class="fab fa-onlyfans text-xl"></i></a>
+
+            </div>
+
+            <div class="text-sm">
+
+                <p>© 2023 Valina Popa. Все права защищены.</p>
+
+                <p>Любое копирование материалов запрещено.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- Модальное окно входа -->
+
+<div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+
+    <div class="login-modal bg-white rounded-2xl p-8 w-full max-w-md">
+
+        <div class="flex justify-between items-center mb-6">
+
+            <h3 class="text-2xl font-bold text-pink-600">Вход</h3>
+
+            <button onclick="closeLoginModal()" class="text-gray-500 hover:text-gray-700">
+
+                <i class="fas fa-times text-xl"></i>
+
+            </button>
+
+        </div>
+
+        <form class="space-y-4">
+
+            <div>
+
+                <label class="block text-gray-700 mb-2">Email</label>
+
+                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+            </div>
+
+            <div>
+
+                <label class="block text-gray-700 mb-2">Пароль</label>
+
+                <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+            </div>
+
+            <div class="flex items-center">
+
+                <input type="checkbox" id="remember" class="mr-2">
+
+                <label for="remember" class="text-gray-700">Запомнить меня</label>
+
+            </div>
+
+            <button type="button" onclick="login()" class="w-full bg-pink-500 text-white py-3 rounded-lg font-bold hover:bg-pink-600 transition">
+
+                Войти <i class="fas fa-sign-in-alt ml-2"></i>
+
+            </button>
+
+        </form>
+
+        <div class="mt-4 text-center">
+
+            <p class="text-gray-600">Нет аккаунта? <a href="#" class="text-pink-500 font-bold">Зарегистрироваться</a></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Модальное окно заявки -->
+
+<div id="requestModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+
+    <div class="request-modal bg-white rounded-2xl p-8 w-full max-w-md">
+
+        <div class="flex justify-between items-center mb-6">
+
+            <h3 class="text-2xl font-bold text-pink-600">Заявка на просмотр</h3>
+
+            <button onclick="closeRequestModal()" class="text-gray-500 hover:text-gray-700">
+
+                <i class="fas fa-times text-xl"></i>
+
+            </button>
+
+        </div>
+
+        <div class="mb-6">
+
+            <div class="bg-pink-100 rounded-xl p-4 text-center">
+
+                <i class="fas fa-heart text-pink-500 text-4xl mb-2 heart-beat"></i>
+
+                <p class="font-bold text-pink-700">VIP доступ к Валиной попе!</p>
+
+                <p class="text-sm text-gray-600">Стоимость: 5 000 руб./сеанс</p>
+
+            </div>
+
+        </div>
+
+        <form class="space-y-4">
+
+            <div>
+
+                <label class="block text-gray-700 mb-2">Ваше имя</label>
+
+                <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+            </div>
+
+            <div>
+
+                <label class="block text-gray-700 mb-2">Email</label>
+
+                <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+            </div>
+
+            <div>
+
+                <label class="block text-gray-700 mb-2">Желаемая дата</label>
+
+                <input type="date" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+
+            </div>
+
+            <div>
+
+                <label class="block text-gray-700 mb-2">Дополнительные пожелания</label>
+
+                <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent" rows="2"></textarea>
+
+            </div>
+
+            <button type="button" onclick="submitRequest()" class="w-full bg-pink-500 text-white py-3 rounded-lg font-bold hover:bg-pink-600 transition">
+
+                Отправить заявку <i class="fas fa-paper-plane ml-2"></i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- Уведомление -->
+
+<div id="notification" class="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hidden z-50">
+
+    <div class="flex items-center">
+
+        <i class="fas fa-check-circle mr-2"></i>
+
+        <span>Ваша заявка успешно отправлена!</span>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+    // Функции для модальных окон
+
+    function openLoginModal() {
+
+        document.getElementById('loginModal').classList.remove('hidden');
+
+    }
+
+
+
+    function closeLoginModal() {
+
+        document.getElementById('loginModal').classList.add('hidden');
+
+    }
+
+
+
+    function openRequestModal() {
+
+        document.getElementById('requestModal').classList.remove('hidden');
+
+    }
+
+
+
+    function closeRequestModal() {
+
+        document.getElementById('requestModal').classList.add('hidden');
+
+    }
+
+
+
+    // Функция входа
+
+    function login() {
+
+        closeLoginModal();
+
+        showNotification('Вы успешно вошли в систему!');
+
+    }
+
+
+
+    // Функция отправки заявки
+
+    function submitRequest() {
+
+        closeRequestModal();
+
+        showNotification('Ваша заявка на просмотр успешно отправлена!');
+
+    }
+
+
+
+    // Показать уведомление
+
+    function showNotification(message) {
+
+        const notification = document.getElementById('notification');
+
+        notification.querySelector('span').textContent = message;
+
+        notification.classList.remove('hidden');
+
+
+
+        setTimeout(() => {
+
+            notification.classList.add('hidden');
+
+        }, 3000);
+
+    }
+
+
+
+    // Закрытие модальных окон при клике вне их
+
+    window.onclick = function(event) {
+
+        if (event.target == document.getElementById('loginModal')) {
+
+            closeLoginModal();
+
+        }
+
+        if (event.target == document.getElementById('requestModal')) {
+
+            closeRequestModal();
+
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>
